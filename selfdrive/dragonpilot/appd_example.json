@@ -1,15 +1,15 @@
 [
   {
-    "app": "lan.rick.pandagpsservice",
-    "apk": "/sdcard/appd/lan.rick.pandagpsservice.apk",
+    "app": "sd",
+    "apk": "/sdcard/appd/sd.apk",
     "offroad_cmd": [
-      "LD_LIBRARY_PATH= appops set lan.rick.pandagpsservice android:mock_location deny",
-      "pm disable lan.rick.pandagpsservice"
+      "LD_LIBRARY_PATH= appops set sd android:mock_location deny",
+      "pm disable sd"
     ],
     "onroad_cmd": [
-      "pm enable lan.rick.pandagpsservice",
-      "LD_LIBRARY_PATH= appops set lan.rick.pandagpsservice android:mock_location allow",
-      "am startservice lan.rick.pandagpsservice/lan.rick.pandagpsservice.MainService"
+      "pm enable sd",
+      "LD_LIBRARY_PATH= appops set sd android:mock_location allow",
+      "am startservice sd/sd.MainService"
     ]
   },
   {
