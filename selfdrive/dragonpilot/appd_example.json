@@ -1,15 +1,15 @@
 [
   {
-    "app": "sd",
-    "apk": "/sdcard/appd/sd.apk",
+    "app": "shendun",
+    "apk": "/sdcard/appd/shendun.apk",
     "offroad_cmd": [
-      "LD_LIBRARY_PATH= appops set sd android:mock_location deny",
-      "pm disable sd"
+      "LD_LIBRARY_PATH= appops set shendun android:mock_location deny",
+      "pm disable shendun"
     ],
     "onroad_cmd": [
-      "pm enable sd",
-      "LD_LIBRARY_PATH= appops set sd android:mock_location allow",
-      "am startservice sd/sd.MainService"
+      "pm enable shendun",
+      "LD_LIBRARY_PATH= appops set shendun android:mock_location allow",
+      "am startservice shendun/shendun.MainService"
     ]
   },
   {
